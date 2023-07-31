@@ -1,0 +1,53 @@
+.page{
+  margin-bottom: 100px;
+}
+.item{
+  display: flex;
+  gap: 75px;
+}
+.content{
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.image{
+  width: 536px;
+  height: 729px;
+  object-fit: cover;
+}
+.price{
+  color: #998E78;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 110%; 
+  letter-spacing: 0.8px; 
+}
+.text{
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.4px; 
+}
+.form{
+  display: flex;
+  gap: 10px;
+}
+.button{
+  cursor: pointer;
+  padding: 20px 50px;
+  background-color: #6E9C9F; 
+  color: white;
+}
+.input{
+  text-align: center;
+  padding: 5px 10px;
+  border: 1px solid #AFAFAF; 
+  max-width: 70px;
+  font-size: 20px;
+  font-family: Raleway; 
+  font-weight: 400;
+  line-height: 140%; /* 28px */
+  letter-spacing: 0.4px; 
+}

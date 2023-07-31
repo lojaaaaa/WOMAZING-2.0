@@ -1,0 +1,29 @@
+  // const items = 
+  // [
+  //   {
+  //     "id": 1, 
+  //     "title": "Футболка USA", 
+  //     "price": "$229", 
+  //     "img": "./img/collection/1.jpg"
+  //   },
+
+  //   {
+  //     "id": 2, 
+  //     "title": "Купальник Glow", 
+  //     "price": "$129", 
+  //     "img": "./img/collection/2.jpg"
+  //   },
+
+  //   {
+  //     "id": 3, 
+  //     "title": "Свитшот Sweet Shot", 
+  //     "price": "$229", 
+  //     "img": "/img/collection/3.jpg"
+  //   },
+  //   {
+  //     "id": 4,
+  //     "title": "Свитшот Sweet Shot", 
+  //     "price": "$229", 
+  //     "img": "./img/collection/3.jpg"
+  //   }
+  // ]

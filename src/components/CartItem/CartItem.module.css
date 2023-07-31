@@ -1,0 +1,50 @@
+.item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
+  margin-top: 50px;
+
+}
+.left{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 1 50%;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  grid-template-rows: subgrid;
+}
+.image{
+  width: 100%;
+  max-width: 130px;
+  max-height: 180px;
+}
+.right{
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  flex: 1 1 50%;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 140%; 
+  letter-spacing: 0.34px; 
+}
+.delete{
+  font-weight: 300;
+  font-size: 20px;
+  cursor: pointer;
+}
+.name{
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 23.8px */
+  letter-spacing: 0.34px; 
+  max-width: 50px;
+}
+.name:first-child{
+  max-width: 120px;
+}

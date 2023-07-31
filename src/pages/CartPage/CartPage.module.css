@@ -1,0 +1,95 @@
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.table{
+
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+  flex: 1 0 50%;
+  gap: 5px;
+  padding: 25px 0;
+  border-bottom: 1px solid #CCC;
+}
+.names{
+  display: flex;
+  flex: 0 1 50%;
+  gap: 5px;
+  justify-content: space-around;
+}
+.name{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%; /* 28px */
+  letter-spacing: 0.4px; 
+}
+.tail{
+
+}
+.items{
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+.text{
+  margin-right: 50px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 140%; /* 23.8px */
+  letter-spacing: 0.34px; 
+}
+
+.control{
+  display: flex;
+  justify-content: space-between;
+}
+.coupon{
+  display: flex;
+  gap: 16px;
+}
+.coupon input{
+  width: 255px;
+  padding: 23px 0px;
+  padding-right: 5px;
+  color: #868686;
+  border: 0;
+  border-bottom: 1px solid black;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 140%; /* 23.8px */
+  letter-spacing: 0.34px;
+}
+
+.total{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  gap: 28px;
+  margin-bottom: 60px;
+}
+.finally{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.finallyPrice{
+  background: #F1EADC; 
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 140%; /* 35px */
+  letter-spacing: 0.5px; 
+  padding: 16px 25px;
+}
+.subtotal span{
+  margin-left: 20px;
+}
+.finallyPrice span{
+  margin-left: 70px;
+}
+
+
+

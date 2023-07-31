@@ -1,0 +1,30 @@
+.button{
+  cursor: pointer;
+  border: 0;
+  padding: 22px 50px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 138.9%;
+  letter-spacing: 0.34px;
+  transition: all .5s ease;
+
+}
+
+.green{
+  background: #6E9C9F;
+  color: #FFF;
+  border: 5px solid #6E9C9F; 
+}
+.green:hover{
+  background: #509498; 
+}
+
+.white{
+  border: 1px solid #6E9C9F; 
+  background-color: #FFF;
+  color: #6E9C9F;
+}
+.white:hover{
+  color: #FFF; 
+  background: #6E9C9F; 
+}
