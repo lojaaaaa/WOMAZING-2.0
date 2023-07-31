@@ -22,13 +22,17 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1) // Текущая страница
   const [itemsPerPage, setItemsPerPage] = useState(3) // Количество товаров на одной странице
 
+  const[filteredItems, setFilteredItems] = useState([])
+
   // Получение данных с сервера
   const getData = async () =>{
     try{
       const itemsData = await getApi("https://64c3b72867cfdca3b6602978.mockapi.io/items")
       const cartItemsData = await getApi("https://64c3b72867cfdca3b6602978.mockapi.io/cart")
       setItems(itemsData)
+      setFilteredItems(itemsData)
       setCartItems(cartItemsData)
+
     }
     catch(error){
       console.error(error)
@@ -93,7 +97,7 @@ function App() {
   // Пагинация
   const lastItemIndex = currentPage * itemsPerPage
   const firstItemIndex = lastItemIndex - itemsPerPage
-  const currentItems = items.slice(firstItemIndex, lastItemIndex)
+  const currentItems = filteredItems.slice(firstItemIndex, lastItemIndex)
 
   const paginate = (pageNumber) =>{
     setCurrentPage(pageNumber)
@@ -110,11 +114,14 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />}/>
             <Route path='/shop' element={<Shop
-            items={items} 
-            itemsPerPage={itemsPerPage} 
-            currentItems={currentItems}
-            paginate={paginate}
-            currentPage={currentPage}/>}/>
+              items={items} 
+              itemsPerPage={itemsPerPage} 
+              currentItems={currentItems}
+              paginate={paginate}
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+              setFilteredItems={setFilteredItems}
+              filteredItems={filteredItems}/>}/>
             <Route path='/shop/:id' element={<ItemPage items={items} addToCart={addToCart}/>}/>
             <Route path='/cart'element={<CartPage 
               items={cartItems} 

@@ -15,9 +15,10 @@ function Pagination({itemsLength, itemsPerPage, paginate, currentPage}) {
         ? <div key={number} onClick={() => paginate(number + 1)} className="shop__pagination-page">{number + 1}</div>
         : <div key={number} onClick={() => paginate(number + 1)} className="shop__pagination-page shop__pagination-page--active">{number + 1}</div>
         ))}
-        <div onClick={() => totalPages !== currentPage ? paginate(currentPage + 1): null} className="shop__pagination-item">
+        {pageNumbers.length > 0 &&         <div onClick={() => totalPages !== currentPage ? paginate(currentPage + 1): null} className="shop__pagination-item">
           <img src="./img/team/right.svg" alt="next"/>
-        </div>
+        </div>}
+
       {/* <div className="shop__pagination-page shop__pagination-page--active">1</div>
       <div className="shop__pagination-page">2</div>
       <div className="shop__pagination-item">

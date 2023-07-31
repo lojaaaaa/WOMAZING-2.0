@@ -1,23 +1,20 @@
 import React from 'react'
-import Header from '../../components/Header/Header'
-import Section from '../../components/Section/Section'
 import Button from '../../components/UI/Button/Button'
 import { Link } from 'react-router-dom'
 
 function Home() {
   return (
     <>
-      <section class="home" id="home">
-        <div class="home__container container">
-        
-          <div class="swiper swiper--home">
-            <div class="swiper-wrapper swiper-wrapper--home">
-              <div class="swiper-slide">
-                <h1 class="slider__title">Новые поступления <br></br> в этом сезоне</h1>
-                <p class="slider__text">Утонченные сочетания и бархатные оттенки - вот то, что вы искали в этом сезоне. Время исследовать.</p>
-                <div class="slider__buttons">
-                  <a href="#" class="slider__button-arrow">
-                    <img class="slider__button-arrowimg" src="./img/main/arrow-down.svg" alt="arrow-down"/>
+      <section className="home" id="home">
+        <div className="home__container container">
+          <div className="swiper swiper--home">
+            <div className="swiper-wrapper swiper-wrapper--home">
+              <div className="swiper-slide">
+                <h1 className="slider__title">Новые поступления <br></br> в этом сезоне</h1>
+                <p className="slider__text">Утонченные сочетания и бархатные оттенки - вот то, что вы искали в этом сезоне. Время исследовать.</p>
+                <div className="slider__buttons">
+                  <a href="#" className="slider__button-arrow">
+                    <img className="slider__button-arrowimg" src="./img/main/arrow-down.svg" alt="arrow-down"/>
                   </a>
                   <Link to={`/shop`}>
                     <Button text={'Открыть магазин'} color={'green'}/>
@@ -26,36 +23,35 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div className="swiper-pagination"></div>
                         
           </div>
                         
-          <div class="home__content">
-            <img class="home__content-img" src="./img/main/main.jpg" alt="img" />
+          <div className="home__content">
+            <img className="home__content-img" src="./img/main/main.jpg" alt="img" />
           </div>
         
         </div>
       </section>
         
-
-      <section class="important">
-        <div class="important__container container">
-          <h2 class="important__title title">Что для нас важно</h2>
-          <div class="important__cards">
-            <div class="important__card">
-              <img src="./img/important/quality.svg" alt="icon" class="important__card-icon"/>
-              <p class="important__card-title">Качество</p>
-              <p class="important__card-text">Наши профессионалы работают на лучшем оборудовании для пошива одежды беспрецедентного качества</p>
+      <section className="important">
+        <div className="important__container container">
+          <h2 className="important__title title">Что для нас важно</h2>
+          <div className="important__cards">
+            <div className="important__card">
+              <img src="./img/important/quality.svg" alt="icon" className="important__card-icon"/>
+              <p className="important__card-title">Качество</p>
+              <p className="important__card-text">Наши профессионалы работают на лучшем оборудовании для пошива одежды беспрецедентного качества</p>
             </div>
-            <div class="important__card">
-              <img src="./img/important/fast.svg" alt="icon" class="important__card-icon"/>
-                <p class="important__card-title">Скорость</p>
-                <p class="important__card-text">Благодаря отлаженной системе в Womazing мы можем отшивать до 20-ти единиц продукции в наших собственных цехах</p>
+            <div className="important__card">
+              <img src="./img/important/fast.svg" alt="icon" className="important__card-icon"/>
+                <p className="important__card-title">Скорость</p>
+                <p className="important__card-text">Благодаря отлаженной системе в Womazing мы можем отшивать до 20-ти единиц продукции в наших собственных цехах</p>
             </div>
-            <div class="important__card">
-              <img src="./img/important/hand.svg" alt="icon" class="important__card-icon"/>
-              <p class="important__card-title">Ответственность</p>
-              <p class="important__card-text">Мы заботимся о людях и планете. Безотходное производство и комфортные условия труда - все это Womazing</p>
+            <div className="important__card">
+              <img src="./img/important/hand.svg" alt="icon" className="important__card-icon"/>
+              <p className="important__card-title">Ответственность</p>
+              <p className="important__card-text">Мы заботимся о людях и планете. Безотходное производство и комфортные условия труда - все это Womazing</p>
             </div>
           </div>
         </div>
